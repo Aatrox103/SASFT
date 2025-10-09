@@ -4,7 +4,7 @@ This repository contains the **core implementation** of the methods described in
 
 ## Overview
 
-Due to the limited storage space of anonymous GitHub uploads, **full datasets and some SAE-related resources** cannot be publicly provided at this time. However, all key training scripts have been included, and the zh-110k dataset is provided in the supplementary materials of our paper on OpenReview.
+Due to the limited storage space of anonymous GitHub uploads, **full datasets and some SAE-related resources** cannot be publicly provided at this time. 
 
 ### Repository Content
 
@@ -13,13 +13,7 @@ Due to the limited storage space of anonymous GitHub uploads, **full datasets an
 - **utils.py**: Utilities shared by training scripts.
 
 > **Note:**  
-> The directory `./data` is meant to store training datasets, and `./sae_acts` stores SAE-associated data used during training and analysis. These are **not included** in the repository due to anonymization requirements and size constraints. However, a key training dataset is provided in the supplementary materials associated with our paper on OpenReview, so you can refer to that for data formatting.
-
-## Usage
-
-1. **Key code is provided** for both the SFT and GRPO methods.
-2. **Example data and formatting instructions** are in the supplementary materials.
-3. To run the scripts, please prepare your data according to the sample files described.
+> The directory `./data` is meant to store training datasets, and `./sae_acts` stores SAE-associated data used during training and analysis. These are **not included** in the repository due to anonymization requirements and size constraints. 
 
 ## Code Overview
 
