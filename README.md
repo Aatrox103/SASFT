@@ -13,7 +13,7 @@ Due to the limited storage space of anonymous GitHub uploads, **full datasets an
 - **utils.py**: Utilities shared by training scripts.
 
 > **Note:**  
-> The directory `./data` is meant to store training datasets, and `./sae_acts` stores SAE-associated data used during training and analysis. These are **not included** in the repository due to anonymization requirements and size constraints. However, a key training dataset is made available with the supplementary materials of our paper, so you can refer to that for data formatting.
+> The directory `./data` is meant to store training datasets, and `./sae_acts` stores SAE-associated data used during training and analysis. These are **not included** in the repository due to anonymization requirements and size constraints. However, a key training dataset is provided in the supplementary materials associated with our paper on OpenReview, so you can refer to that for data formatting.
 
 ## Usage
 
@@ -31,7 +31,3 @@ Due to the limited storage space of anonymous GitHub uploads, **full datasets an
 ├── data/                              # (Not included) training data
 └── sae_acts/                          # (Not included) SAE-related data & activations
 ```
-
-## Disclaimer
-
-Due to anonymity and data privacy reasons, only key components and code files are published. Please refer to our supplementary materials in OpenReview for training datasets.
