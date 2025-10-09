@@ -4,7 +4,7 @@ This repository contains the **core implementation** of the methods described in
 
 ## Overview
 
-Due to the limited storage space of anonymous GitHub uploads, **full datasets and some SAE-related resources** cannot be publicly provided at this time. However, all key training scripts have been included, and example training datasets are provided in our supplementary materials in OpenReview.
+Due to the limited storage space of anonymous GitHub uploads, **full datasets and some SAE-related resources** cannot be publicly provided at this time. However, all key training scripts have been included, and the zh-110k dataset is provided in the supplementary materials of our paper on OpenReview.
 
 ### Repository Content
 
