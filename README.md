@@ -25,4 +25,3 @@ Due to the limited storage space of anonymous GitHub uploads, **full datasets an
 ├── data/                              # (Not included) training data
 └── sae_acts/                          # (Not included) SAE-related data & activations
 ```
-
