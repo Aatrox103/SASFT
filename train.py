@@ -94,7 +94,8 @@ def train(args):
     formatted_data = pd.read_json(data_path, lines=True)
     formatted_data['lang'] = formatted_data.apply(lambda x: lan_list.index(x['lang']), axis=1)
     formatted_data=formatted_data.drop(columns=['source'])
-    print(f'###########################\ntotal data num: {len(formatted_data)}\n###########################\n')
+    if PartialState().is_main_process:
+        print(f'###########################\ntotal data num: {len(formatted_data)}\n###########################\n')
 
     max_length = 2048
     per_device_train_batch_size = 1
@@ -136,7 +137,8 @@ def train(args):
 
     before = len(formatted_dataset)
     formatted_dataset = formatted_dataset.filter(has_response_template, num_proc=64)
-    print(f'Filtered {before - len(formatted_dataset)} samples missing response template, {len(formatted_dataset)} remaining.')
+    if PartialState().is_main_process:
+        print(f'Filtered {before - len(formatted_dataset)} samples missing response template, {len(formatted_dataset)} remaining.')
 
     lr_suffix = f'_lr_{args.lr}'
     method = f'{args.sae_method}/SAE-{args.whether_sae}{lr_suffix}_epoch_{args.epoch}'
