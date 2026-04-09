@@ -1,1 +1,4 @@
 .DS_Store
+sae_acts/
+checkpoints/
+copy_sae_acts.py
