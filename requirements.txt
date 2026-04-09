@@ -9,4 +9,5 @@ tqdm==4.67.1
 vllm==0.8.5.post1
 numpy==1.26.4
 huggingface-hub==0.31.1
+tensorboardX==2.6.2.2
 pandas==2.2.3
