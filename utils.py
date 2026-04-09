@@ -2,15 +2,17 @@ import os
 from sae_lens import SAE
 import argparse
 from lm_saes import SparseAutoEncoder
+from accelerate import PartialState
 
 
 def pretty_print_args(args):
-    print("\n" + "="*50)
-    print("Configuration Arguments:")
-    print("-"*50)
-    for k, v in vars(args).items():
-        print(f"{k:.<30} {v}")
-    print("="*50 + "\n")
+    if PartialState().is_main_process:
+        print("\n" + "="*50)
+        print("Configuration Arguments:")
+        print("-"*50)
+        for k, v in vars(args).items():
+            print(f"{k:.<30} {v}")
+        print("="*50 + "\n")
 
 
 def str2bool(str):
@@ -27,14 +29,12 @@ def load_args():
     parser.add_argument('--reduced_lan', default='ko', type=str, help='language to be reduced')
     # for all
     parser.add_argument('--loss_weight', default=0.001, type=float)
-    parser.add_argument('--data_set', default='zh_200k', type=str)
+    parser.add_argument('--data_set', default='zh_100k', type=str)
     parser.add_argument('--model', default='gemma-2-2b', type=str)
     # parser.add_argument('--model', default='gemma-2-9b', type=str)
     # parser.add_argument('--model', default='Meta-Llama-3.1-8B', type=str)
-    # parser.add_argument('--model', default='Qwen3-1.7B-Base', type=str)
-    # parser.add_argument('--model', default='Qwen3-8B-Base', type=str)
-    # parser.add_argument('--model_path', default='/xxxx/gemma-2-2b', type=str, help='local path for model ckpts')
-    parser.add_argument('--model_path', default='/xxxx/Meta-Llama-3.1-8B', type=str, help='local path for model ckpts')
+    parser.add_argument('--model_path', default='/mnt/nas_intern/users/dengboyi.dby/checkpoints/gemma-2-2b', type=str, help='local path for model ckpts')
+    # parser.add_argument('--model_path', default='/xxxx/Meta-Llama-3.1-8B', type=str, help='local path for model ckpts')
 
     parser.add_argument('--lr', default=1e-5, type=float)
     parser.add_argument('--epoch', default=1, type=int)
