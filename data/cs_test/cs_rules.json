@@ -1,0 +1,114 @@
+{
+  "target_lan_per_lan": {
+    "zh": [
+      "ar",
+      "th",
+      "vi"
+    ],
+    "ru": [
+      "ar",
+      "th",
+      "ko"
+    ],
+    "ko": [
+      "zh",
+      "th",
+      "ja"
+    ]
+  },
+  "task_lists": {
+    "zh": {
+      "ar": [
+        "pmmeval_mmmlu/AR-XY",
+        "mgsm_openai/ar",
+        "pmmeval_mhellaswag/ar",
+        "multilingual_logiqa/ar",
+        "multilingual_IFEval/ar",
+        "flores/en-x/en-ar",
+        "flores/zh-x/zh-ar"
+      ],
+      "th": [
+        "pmmeval_mmmlu/TH-TL",
+        "mgsm_openai/th",
+        "pmmeval_mhellaswag/th",
+        "multilingual_logiqa/th",
+        "multilingual_IFEval/th",
+        "flores/en-x/en-th",
+        "flores/zh-x/zh-th"
+      ],
+      "vi": [
+        "pmmeval_mmmlu/VI-VT",
+        "mgsm_openai/vi",
+        "pmmeval_mhellaswag/vi",
+        "multilingual_logiqa/vi",
+        "multilingual_IFEval/vi",
+        "flores/en-x/en-vi",
+        "flores/zh-x/zh-vi"
+      ]
+    },
+    "ko": {
+      "zh": [
+        "pmmeval_mmmlu/ZH-CN",
+        "mgsm_openai/zh",
+        "pmmeval_mhellaswag/zh",
+        "multilingual_logiqa/zh",
+        "multilingual_IFEval/zh",
+        "flores/x-zh/ar-zh",
+        "flores/x-zh/es-zh",
+        "flores/x-zh/fr-zh",
+        "flores/x-zh/ja-zh",
+        "flores/x-zh/ko-zh",
+        "flores/x-zh/pt-zh",
+        "flores/x-zh/th-zh",
+        "flores/x-zh/vi-zh"
+      ],
+      "th": [
+        "pmmeval_mmmlu/TH-TL",
+        "mgsm_openai/th",
+        "pmmeval_mhellaswag/th",
+        "multilingual_logiqa/th",
+        "multilingual_IFEval/th",
+        "flores/en-x/en-th",
+        "flores/zh-x/zh-th"
+      ],
+      "ja": [
+        "pmmeval_mmmlu/JA-JP",
+        "mgsm_openai/ja",
+        "pmmeval_mhellaswag/ja",
+        "multilingual_logiqa/ja",
+        "multilingual_IFEval/ja",
+        "flores/en-x/en-ja",
+        "flores/zh-x/zh-ja"
+      ]
+    },
+    "ru": {
+      "ar": [
+        "pmmeval_mmmlu/AR-XY",
+        "mgsm_openai/ar",
+        "pmmeval_mhellaswag/ar",
+        "multilingual_logiqa/ar",
+        "multilingual_IFEval/ar",
+        "flores/en-x/en-ar",
+        "flores/zh-x/zh-ar"
+      ],
+      "th": [
+        "pmmeval_mmmlu/TH-TL",
+        "mgsm_openai/th",
+        "pmmeval_mhellaswag/th",
+        "multilingual_logiqa/th",
+        "multilingual_IFEval/th",
+        "flores/en-x/en-th",
+        "flores/zh-x/zh-th"
+      ],
+      "ko": [
+        "pmmeval_mmmlu/KO-KR",
+        "mgsm_openai/ko",
+        "pmmeval_mhellaswag/ko",
+        "multilingual_logiqa/ko",
+        "multilingual_IFEval/ko",
+        "flores/en-x/en-ko",
+        "flores/zh-x/zh-ko"
+      ]
+    }
+  }
+}
