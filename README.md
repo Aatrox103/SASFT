@@ -32,6 +32,19 @@ This will automatically download the following SAE models into the `./SAE/` dire
 
 > **Note:** If you encounter network issues, you can uncomment the alternative download URLs in `download.py` to use mirror sites.
 
+## Data
+
+All data files are located in the `./data/` directory:
+
+| File | Description |
+|---|---|
+| `sft_data_zh_110k.jsonl` | ~110k Chinese-target SFT training data — used for main paper results |
+| `sft_data_ko_110k.jsonl` | ~110k Korean-target SFT training data — used for main paper results |
+| `sft_data_ru_110k.jsonl` | ~110k Russian-target SFT training data — used for main paper results |
+| `multilingual_data.jsonl` | ~1k multilingual samples used to identify language-specific SAE features |
+| `multilingual_data_new_SFTData.jsonl` | ~7.8k multilingual samples used to estimate per-language average feature activations (loaded by `find_lan_feature.py`) |
+| `cs_test/` | Test set for code-switching detection and evaluation (`cs_detect.py`) |
+
 ## Usage
 
 ### 1. Finding Language-Specific Features
