@@ -39,11 +39,6 @@ def load_args():
     parser.add_argument('--lr', default=1e-5, type=float)
     parser.add_argument('--epoch', default=1, type=int)
 
-    # GRPO args
-    parser.add_argument('--temperature', default=1.0, type=float)
-    parser.add_argument('--sft_mdoel_path', default="", type=str)
-    parser.add_argument('--grpo_method', default='', type=str, choices=['', 'reduce'], help='sae method')
-
     args = parser.parse_args()
     pretty_print_args(args)
     return args
