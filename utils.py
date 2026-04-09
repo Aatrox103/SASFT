@@ -29,7 +29,7 @@ def load_args():
     parser.add_argument('--reduced_lan', default='ko', type=str, help='language to be reduced')
     # for all
     parser.add_argument('--loss_weight', default=0.001, type=float)
-    parser.add_argument('--data_set', default='zh_100k', type=str)
+    parser.add_argument('--data_set', default='zh_110k', type=str)
     parser.add_argument('--model', default='gemma-2-2b', type=str)
     # parser.add_argument('--model', default='gemma-2-9b', type=str)
     # parser.add_argument('--model', default='Meta-Llama-3.1-8B', type=str)

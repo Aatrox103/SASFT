@@ -78,7 +78,7 @@ Checkpoints are saved to `./checkpoints/{data_set}/{model}/{method}/`. For more 
 |---|---|---|
 | `--model` | `gemma-2-2b` | Model name (`gemma-2-2b`, `gemma-2-9b`, `Meta-Llama-3.1-8B`) |
 | `--model_path` | — | Path or HuggingFace ID of base model |
-| `--data_set` | `zh_200k` | Training dataset name |
+| `--data_set` | `zh_110k` | Training dataset name |
 | `--whether_sae` | `False` | Enable SAE-guided loss |
 | `--sae_method` | `SASFT` | SAE loss method (`SASFT` or `SASFT_zero`) |
 | `--reduced_lan` | `ko` | Target language to reduce code-switching for |
@@ -90,7 +90,7 @@ Checkpoints are saved to `./checkpoints/{data_set}/{model}/{method}/`. For more 
 To evaluate code-switching rate on a trained checkpoint:
 
 ```bash
-python cs_detect.py --model_path ./checkpoints/zh_100k/gemma-2-2b/SASFT/SAE-True_lr_5e-05_epoch_1-layer-num-2-loss-weight-0.0005-layer-24-25_top_feature_idx_0-1/checkpoint-439
+python cs_detect.py --model_path ./checkpoints/zh_110k/gemma-2-2b/SASFT/SAE-True_lr_5e-05_epoch_1-layer-num-2-loss-weight-0.0005-layer-24-25_top_feature_idx_0-1/checkpoint-439
 ```
 
 Results are saved to `./cs_results/` including:
