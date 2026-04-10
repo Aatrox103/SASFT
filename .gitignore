@@ -3,3 +3,4 @@ sae_acts/
 checkpoints/
 copy_sae_acts.py
 SAE/
+__pycache__/
